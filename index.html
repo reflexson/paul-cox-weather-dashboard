@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+    <header class="p-5 mb-4">
+      <h1 class="display-3">Weather Dashboard</h1>
+    </header>
+    <div id="mainContainer" class="container-fluid">
+      <div class="row">
+        <div class="card col-4" >
+          <div class="card-body" id="searchContainer">
+            <h3 class="card-title text-center">Search for a City</h3>
+            <form class="row" id="searchForm">
+              <input Type="HTMLInputElement text" class="form-control me-2 text-center" id= "cityInput" type="search" placeholder="Enter City" aria-label="Search" >
+              <button class="btn btn-primary" type="submit" id="submitButton">Search</button>
+            </form>
+            <div id="listForm">
+              <ul class="list-group text-center" id="pastSearches">
+              <!-- <button type="button" class="list-group-item list-group-item-action list-group-item-secondary">test</button> -->
+              <!-- <button type="button" class="list-group-item list-group-item-action list-group-item-secondary">Dallas</button>
+              <button type="button" class="list-group-item list-group-item-action list-group-item-secondary">Las Vegas</button>
+              <button type="button" class="list-group-item list-group-item-action list-group-item-secondary">Pooptown</button> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card col-8 row" id="weatherContainer"> 
+          <div class="card col-12" id="currentWeather">
+              <h3 id="currentCity"><span id="cityName">Current City</span><span id="day0Date"> date</span><img src="./assets/imgs/TempWeather.png" id="day0Icon"></h3>
+              <p id="day0Temp">Temp:</p>
+              <p id="day0Wind">Wind:</p>
+              <p id="day0Hum">Humidity:</p>
+          </div>
+          <div id="forcastContainer" class="row col-12 text-center">
+            <div id="day1" class="card col-2 dayBox">
+              <p id="day1Date">date</p>
+              <div class="icon"><img src="./assets/imgs/TempWeather.png" id="day1Icon"></div>
+              <p id="day1Temp">Temp:</p>
+              <p id="day1Wind">Wind:</p>
+              <p id="day1Hum">Humidity:</p>
+            </div>
+            <div id="day2" class="card col-2 dayBox">
+              <p id="day2Date">date</p>
+              <div class="icon"><img src="./assets/imgs/TempWeather.png" id="day2Icon"></div>
+              <p id="day2Temp">Temp:</p>
+              <p id="day2Wind">Wind:</p>
+              <p id="day2Hum">Humidity:</p>
+            </div>
+            <div id="day3" class="card col-2 dayBox">
+              <p id="day3Date">date</p>
+              <div class="icon"><img src="./assets/imgs/TempWeather.png" id="day3Icon"></div>
+              <p id="day3Temp">Temp:</p>
+              <p id="day3Wind">Wind:</p>
+              <p id="day3Hum">Humidity:</p>
+            </div>
+            <div id="day4" class="card col-2 dayBox">
+              <p id="day4Date">date</p>
+              <div class="icon"><img src="./assets/imgs/TempWeather.png" id="day4Icon"></div>
+              <p id="day4Temp">Temp:</p>
+              <p id="day4Wind">Wind:</p>
+              <p id="day4Hum">Humidity:</p>
+            </div>
+            <div id="day5" class="card col-2 dayBox">
+              <p id="day5Date">date</p>
+              <div class="icon"><img src="./assets/imgs/TempWeather.png" id="day5Icon"></div>
+              <p id="day5Temp">Temp:</p>
+              <p id="day5Wind">Wind:</p>
+              <p id="day5Hum">Humidity:</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+     crossorigin="anonymous"></script>
+
+  
+    <script src="./assets/js/script.js"></script>
+    
+  </body>
+</html>
