@@ -64,8 +64,8 @@ else{
 }
 // convert city name to lat and lon
   function geoCode(city){
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=$${city}&appid=f5b23a91c2f7a0c11c8a9728683cd8b0`)
-    .then(response => response.json())
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=$${city}&appid=f5b23a91c2f7a0c11c8a9728683cd8b0`)
+    .then(response => response.json()) 
     .then(data => {
       console.log(data);
       if(data.length !== 0){
