@@ -37,24 +37,22 @@
               <input Type="HTMLInputElement text" class="form-control me-2 text-center" id= "cityInput" type="search" placeholder="Enter City" aria-label="Search" >
               <button class="btn btn-primary" type="submit" id="submitButton">Search</button>
             </form>
-            <div id="listForm">
+            <div class="pevButtonsBox text-center" id="listForm"> Previous Searches
               <ul class="list-group text-center" id="pastSearches">
-              <!-- <button type="button" class="list-group-item list-group-item-action list-group-item-secondary">test</button> -->
-              <!-- <button type="button" class="list-group-item list-group-item-action list-group-item-secondary">Dallas</button>
-              <button type="button" class="list-group-item list-group-item-action list-group-item-secondary">Las Vegas</button>
-              <button type="button" class="list-group-item list-group-item-action list-group-item-secondary">Pooptown</button> -->
               </ul>
             </div>
           </div>
         </div>
         <div class="card col-8 row" id="weatherContainer"> 
           <div class="card col-12" id="currentWeather">
-              <h3 id="currentCity"><span id="cityName">Current City</span><span id="day0Date"> date</span><img src="./assets/imgs/TempWeather.png" id="day0Icon"></h3>
-              <p id="day0Temp">Temp:</p>
-              <p id="day0Wind">Wind:</p>
-              <p id="day0Hum">Humidity:</p>
+              <h3 class="text-center">Current Conditions</h3>
+              <p id="currentCity"><span id="cityName" class="currentTitle"></span><span id="day0Date"></span><img src="./assets/imgs/TempWeather.png" id="day0Icon"></p>
+              <p id="day0Temp"></p>
+              <p id="day0Wind"></p>
+              <p id="day0Hum"></p>
           </div>
           <div id="forcastContainer" class="row col-12 text-center">
+            <h3>5 Day Forcast</h3>
             <div id="day1" class="card col-2 dayBox">
               <p id="day1Date">date</p>
               <div class="icon"><img src="./assets/imgs/TempWeather.png" id="day1Icon"></div>
