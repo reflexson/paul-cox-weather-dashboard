@@ -8,11 +8,11 @@ This project is weather dashboard application to display the current weather and
 
 the web address for this project is:
 
-https://reflexson.github.io/paul-cox-calendar-app/
+https://reflexson.github.io/paul-cox-weather-dashboard/
 
 The reference code can be accessed here:
 
-https://github.com/reflexson/paul-cox-calendar-app
+https://github.com/reflexson/paul-cox-weather-dashboard
 
 ## Usage
 
