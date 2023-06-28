@@ -1,0 +1,67 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+#mainContainer{
+  /* margin-left: 65px; */
+  padding-left: 40px;
+
+.list-group{
+  padding-right: 0;
+}
+
+}
+#searchContainer{
+  padding: 16px;
+}
+
+
+.dayBox{
+  background-color: rgb(48, 206, 224);
+  margin: 5px;
+}
+
+.currentTitle{
+  font-size: 2vw;
+}
+
+.pevButtonsBox{
+margin-top: 5px;
+padding-top: 5px;
+border-top: #676565;
+border-top-style: dashed;
+color: #828080;
+}
+
+#weatherContainer{
+  padding: 16px;
+
+}
+
+.card{
+  border-style:none;
+
+}
+#citySearch{
+  border-style: solid;
+  border-color: #000000;
+  
+}
+
+#weatherForcast{
+  float: right;
+}
+header{
+  text-align: center;
+  background-image: linear-gradient(to right, rgb(47, 0, 255) , rgb(255, 255, 254));
+}
+
+
+
+
+
+
+
+
+
+
